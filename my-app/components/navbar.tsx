@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 
 export default function Navbar() { 
     return (
-        <nav className="flex items-center justify-between px-6 py-4 lg:px-8">
+        <nav className="flex items-center justify-between px-6 py-4 lg:px-22 relative z-10">
           <div className="flex items-center gap-2">
             <Image src={logo} width={45} height={45} alt="logo"/>
             <span className="text-white font-semibold text-lg">Respire</span>
