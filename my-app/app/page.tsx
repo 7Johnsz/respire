@@ -1,19 +1,15 @@
-import { Heart, ChevronDown } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
-import logo from "@/public/logo.png"
-import About from "@/components/about"
-import Navbar from "@/components/navbar"
 import Impacts from "@/components/impacts"
-import Hero from "@/components/hero"
 import Footer from "@/components/footer"
+import Navbar from "@/components/navbar"
+import About from "@/components/about"
+import Hero from "@/components/hero"
+import { Heart } from "lucide-react"
 
 export default function Component() {
   return (
     <div className="min-h-screen">
       <div className="bg-gradient-to-br from-raisin-black via-feldgrau to-sea-green">
-        <Navbar />
-        
+        <Navbar />      
         <Hero />
       </div>
 
