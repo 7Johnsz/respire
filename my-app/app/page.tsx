@@ -7,13 +7,12 @@ import { Heart } from "lucide-react"
 
 export default function Component() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen tracking-tight">
       <div className="bg-gradient-to-br from-raisin-black via-feldgrau to-sea-green">
         <Navbar />      
         <Hero />
       </div>
-
-      <Impacts />
+      <About />
 
       <div className="bg-raisin-black text-white py-16 px-6 text-center">
         <Heart className="w-16 h-16 mx-auto mb-4 text-sage" />
@@ -21,7 +20,7 @@ export default function Component() {
         <h2 className="mt-4 text-[18px]">— para você e para o planeta.</h2>
       </div>
 
-      <About />
+      <Impacts />
       <Footer />
     </div>
   )
