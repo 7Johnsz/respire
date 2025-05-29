@@ -5,7 +5,7 @@ import About from "@/components/about"
 import Hero from "@/components/hero"
 import { Heart } from "lucide-react"
 
-export default function Component() {
+export default function Home() {
   return (
     <div className="min-h-screen tracking-tight">
       <div className="bg-gradient-to-br from-raisin-black via-feldgrau to-sea-green">
