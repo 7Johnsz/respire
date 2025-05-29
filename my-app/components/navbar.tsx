@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import logo from '@/public/logo.png'
 import { Button } from '@/components/ui/button'
+import { BotMessageSquare } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Navbar() { 
     return (
@@ -11,18 +13,15 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex items-center gap-8">
-            <a href="#" className="text-ash-gray hover:text-white transition-colors">
-              Como funciona
-            </a>
-            <a href="#" className="text-ash-gray hover:text-white transition-colors">
-              Benefícios
-            </a>
-            <a href="#" className="text-ash-gray hover:text-white transition-colors">
-              IA
-            </a>
-            <Button className="bg-sage hover:bg-sea-green text-raisin-black font-medium px-6 py-2 rounded-full transition-colors">
-              Comece
-            </Button>
+            <Link href="#" className="text-ash-gray hover:text-white transition-colors">
+              Impactos
+            </Link>
+            <Link href="#" className="text-ash-gray hover:text-white transition-colors">
+              Protótipos
+            </Link>
+            <Link href="#" className="bg-sage flex hover:bg-sea-green text-raisin-black font-medium px-6 py-2 rounded-full transition-colors">
+              <BotMessageSquare className='mr-3' /> Precisa de ajuda?
+            </Link>
           </div>
 
           {/* Mobile menu button */}
