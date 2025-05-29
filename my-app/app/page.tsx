@@ -4,43 +4,13 @@ import Image from "next/image"
 import logo from "@/public/logo.png"
 import nature from "@/public/nature.jpeg"
 import About from "@/components/about"
+import Navbar from "@/components/navbar"
 
 export default function Component() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
       <div className="bg-gradient-to-br from-raisin-black via-feldgrau to-sea-green">
-        {/* Navigation */}
-        <nav className="flex items-center justify-between px-6 py-4 lg:px-8">
-          <div className="flex items-center gap-2">
-            <Image src={logo} width={45} height={45} alt="logo"/>
-            <span className="text-white font-semibold text-lg">Respire</span>
-          </div>
-
-          <div className="hidden md:flex items-center gap-8">
-            <a href="#" className="text-ash-gray hover:text-white transition-colors">
-              Como funciona
-            </a>
-            <a href="#" className="text-ash-gray hover:text-white transition-colors">
-              Benefícios
-            </a>
-            <a href="#" className="text-ash-gray hover:text-white transition-colors">
-              IA
-            </a>
-            <Button className="bg-sage hover:bg-sea-green text-raisin-black font-medium px-6 py-2 rounded-full transition-colors">
-              Comece
-            </Button>
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <Button variant="ghost" size="sm" className="text-ash-gray">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </Button>
-          </div>
-        </nav>
+        <Navbar />
 
         {/* Hero Content */}
         <div className="flex flex-col items-center justify-center min-h-[calc(100vh-80px)] px-6 text-center">

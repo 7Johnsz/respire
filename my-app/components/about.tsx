@@ -5,7 +5,7 @@ export default function About() {
       <section className="bg-white py-24 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="lg:sticky lg:top-24 lg:h-fit">
-            <h2 className="text-5xl font-bold text-raisin-black mb-6"><span className="border mr-4"></span>Tecnologia que Respira</h2>
+            <h2 className="text-5xl font-[800] text-raisin-black mb-6"><span className="border mr-4"></span>Tecnologia que respira</h2>
             <p className="text-feldgrau text-lg md:text-xl mb-8 leading-relaxed">
               Desenvolvemos um <span className="text-sea-green font-semibold">biofilme inteligente</span> a partir do eletrólito líquido presente nos cigarros eletrônicos. Essa inovação transforma resíduos tóxicos em soluções sustentáveis para saúde, meio ambiente e educação.
             </p>

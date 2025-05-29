@@ -1,0 +1,38 @@
+import Image from 'next/image'
+import logo from '@/public/logo.png'
+import { Button } from '@/components/ui/button'
+
+export default function Navbar() { 
+    return (
+        <nav className="flex items-center justify-between px-6 py-4 lg:px-8">
+          <div className="flex items-center gap-2">
+            <Image src={logo} width={45} height={45} alt="logo"/>
+            <span className="text-white font-semibold text-lg">Respire</span>
+          </div>
+
+          <div className="hidden md:flex items-center gap-8">
+            <a href="#" className="text-ash-gray hover:text-white transition-colors">
+              Como funciona
+            </a>
+            <a href="#" className="text-ash-gray hover:text-white transition-colors">
+              Benefícios
+            </a>
+            <a href="#" className="text-ash-gray hover:text-white transition-colors">
+              IA
+            </a>
+            <Button className="bg-sage hover:bg-sea-green text-raisin-black font-medium px-6 py-2 rounded-full transition-colors">
+              Comece
+            </Button>
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <Button variant="ghost" size="sm" className="text-ash-gray">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </Button>
+          </div>
+        </nav>
+    )
+}
