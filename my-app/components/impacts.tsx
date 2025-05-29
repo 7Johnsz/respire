@@ -2,7 +2,7 @@ import { Zap } from "lucide-react";
 
 export default function Impacts() {
     return (
-        <div className="bg-ash-gray py-16 px-6">
+        <div className="bg-ash-gray py-16 px-6" id="impacto">
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold text-raisin-black mb-4">Seu impacto em tempo real</h2>

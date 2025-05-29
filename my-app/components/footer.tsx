@@ -7,7 +7,6 @@ export default function Footer() {
   return (
     <footer className="bg-raisin-black text-ash-gray py-12 px-6">
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-6">
-        {/* Logo + Missão */}
         <div className="flex flex-col items-center">
           <div className="flex items-center gap-3 mb-3">
             <Image src={logo} alt="Logo Respire" width={40} height={40} />
@@ -18,7 +17,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Contato + Redes */}
         <div>
           <p className="text-sm mb-2">contato@respire.eco</p>
           <div className="flex justify-center gap-4">
@@ -34,7 +32,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Copyright */}
       <div className="mt-12 border-t border-feldgrau/40 pt-6 text-center text-xs text-feldgrau">
         © {new Date().getFullYear()} Respire. Todos os direitos reservados.
       </div>
