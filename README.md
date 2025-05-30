@@ -1,68 +1,87 @@
 # 🌱 Respire
 
-Reutilizando o que faz mal para construir um futuro que faz bem.
+> Reutilizando o que faz mal para construir um futuro que faz bem.
 
-**Respire** é uma solução desenvolvida durante o **1º Hackathon da Receita Federal – 2025**, com o objetivo de reaproveitar cigarros eletrônicos (vapes) apreendidos e transformá-los em tecnologia útil com impacto **ambiental, social e educacional**.
+**Respire** é uma solução criada durante o **1º Hackathon da Receita Federal – 2025**, com o objetivo de **reaproveitar cigarros eletrônicos apreendidos** e transformá-los em **tecnologia útil com impacto ambiental, social e educacional**.
 
 ---
 
-## 🧠 Sobre o projeto
+## 🧠 Visão geral
 
-Vapes são proibidos no Brasil e geram toneladas de lixo eletrônico tóxico. No entanto, seus componentes ainda têm valor: baterias, sensores e eletrólitos podem ser reaproveitados.
+Cigarros eletrônicos descartáveis (vapes) são ilegais no Brasil, mas contêm componentes valiosos. Em vez de virarem lixo tóxico, a Respire propõe:
 
-> 🚀 Nossa proposta: transformar o eletrólito dos vapes em um **biofilme inteligente** com múltiplas aplicações — enquanto oferecemos uma plataforma com IA para conscientização e mudança de comportamento.
+- 🔬 Reutilizar o **eletrólito** para criar um **biofilme inteligente**
+- 💬 Criar uma **IA motivacional** que ajuda usuários a **parar de fumar**
+- 📊 Mostrar o **impacto real** gerado com o descarte consciente
 
 ---
 
 ## 🔬 Biofilme Inteligente
 
-Desenvolvemos um **biofilme eletroativo** utilizando o eletrólito dos cigarros eletrônicos apreendidos.
-
-Esse biofilme pode ser usado como sensor de:
+Utilizamos o **eletrólito dos vapes** para produzir um **biofilme eletroativo**, capaz de funcionar como sensor para:
 
 - 🌡️ Temperatura
 - 💧 Umidade
-- 🌬️ Qualidade do ar
+- 🌬️ Gases
 
-### 📍 Aplicações práticas:
-- Monitoramento ambiental
-- Hortas comunitárias
-- Experimentos escolares
-- Clínicas populares
-
----
-
-## 💻 Plataforma com IA
-
-Além do hardware sustentável, criamos uma **plataforma web inteligente** para ajudar usuários a:
-
-- Refletir sobre o uso do vape
-- Acompanhar seu impacto positivo com o descarte
-- Interagir com uma IA motivacional
-- Visualizar métricas ambientais em tempo real
+### Aplicações reais:
+- Hortas comunitárias 🌱  
+- Projetos escolares 📚  
+- Clínicas populares 🏥  
+- Monitoramento ambiental 🌍  
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## 🤖 Plataforma com IA (Respire AI)
 
-- `Next.js` + `App Router`
-- `Tailwind CSS`
-- `ShadCN UI`
+Criamos uma **IA empática e consciente** que conversa com os usuários sobre:
+
+- O vício em cigarros eletrônicos
+- Estratégias para parar de usar
+- Reflexões e encorajamento
+- O impacto ambiental do descarte correto
+
+✨ Totalmente em português, com princípios anti-vaping claros e linguagem acolhedora.
+
+---
+
+## 🧩 Tecnologias utilizadas
+
+### 🌐 Frontend
+- `Next.js` com `App Router`
+- `Tailwind CSS` + `ShadCN UI`
 - `Lucide Icons`
 - `Framer Motion`
-- `Vercel` (Deploy)
-- `OpenAI API` ou `Gemini` (em breve)
+
+### 🤖 IA
+- `Python`
+- `LangChain`
+- `Streamlit` com `RunnableWithMessageHistory`
+
+### 🚀 Outros
+- `Vercel` (deploy do site)
+- `Streamlit Cloud` (deploy do chat)
 
 ---
 
-## 📦 Como rodar o projeto
+## 📦 Como rodar localmente
 
 ```bash
-# Clone o repositório
 git clone https://github.com/7johnsz/respire.git
+```
+
+### 🖥️ Frontend (Next.js + Bun)
+
+```bash
 cd respire
-
 bun i
-
-# Rode localmente
 bun dev
+```
+
+### 🖥️ Backend (Python)
+
+```bash
+cd ai
+uv sync
+uv run streamlit run src/main.py
+```
