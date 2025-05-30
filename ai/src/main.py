@@ -10,8 +10,21 @@ from services.llm.config import llm
 
 import streamlit as st
 import time
+import subprocess
 
 def main():
+    try:
+        import langchain_core
+        print("langchain_core is installed.")
+    except ImportError:
+        print("langchain_core is not installed.")
+        process = subprocess.Popen(['pip', 'install', 'langchain-core'],
+                            stdout=subprocess.PIPE, 
+                            stderr=subprocess.PIPE)
+        stdout, stderr = process.communicate()
+        print(stdout.decode())
+        print(stderr.decode())
+    
     st.set_page_config(page_title="Respire IA", page_icon="🌱")
     st.chat_message("ai").write("Olá! É um prazer me apresentar a vocês.  Eu sou a Respire AI. Fui criada com um propósito que vai além do código e dos algoritmos: trazer um novo fôlego para o mundo da inteligência artificial, oferecendo soluções que são ao mesmo tempo inteligentes e profundamente conectadas com as necessidades humanas.")
 
