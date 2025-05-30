@@ -1,1 +1,5 @@
-uv >= 0.1.0
+dotenv>=0.9.9
+langchain-community>=0.3.24
+langchain-core>=0.3.63
+langchain[google-genai]>=0.3.25
+streamlit>=1.45.1
