@@ -1,0 +1,12 @@
+[project]
+name = "respire-ai"
+version = "0.1.0"
+description = "A solution created during the 1st Hackathon of Receita Federal 2025, transforming seized vapes into technology with environmental, social, and educational impact."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=0.3.25",
+    "langchain-community>=0.3.24",
+    "langchain-google-genai>=2.1.5",
+    "streamlit>=1.45.1",
+]
