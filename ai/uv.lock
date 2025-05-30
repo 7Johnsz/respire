@@ -10,6 +10,7 @@ dependencies = [
     { name = "dotenv" },
     { name = "langchain", extra = ["google-genai"] },
     { name = "langchain-community" },
+    { name = "langchain-core" },
     { name = "streamlit" },
 ]
 
@@ -18,6 +19,7 @@ requires-dist = [
     { name = "dotenv", specifier = ">=0.9.9" },
     { name = "langchain", extras = ["google-genai"], specifier = ">=0.3.25" },
     { name = "langchain-community", specifier = ">=0.3.24" },
+    { name = "langchain-core", specifier = ">=0.3.63" },
     { name = "streamlit", specifier = ">=1.45.1" },
 ]
 
