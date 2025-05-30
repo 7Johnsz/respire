@@ -24,7 +24,7 @@ class LLMService:
             self.llm = ChatGoogleGenerativeAI(
                 model="gemini-2.0-flash",
                 temperature=0.7,
-                google_api_key=os.getenv("GOOGLE_API_KEY"))
+                google_api_key=os.getenv("GOOGLE_API_KEY") or st.secrets["GOOGLE_API_KEY"])
 
         except Exception as e:
             st.error(f"Failed to initialize LLM. Please check your API key and model name. Error: {e}")
