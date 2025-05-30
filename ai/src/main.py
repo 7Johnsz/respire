@@ -12,14 +12,17 @@ import streamlit as st
 import time
 
 def main():
-    st.set_page_config(page_title="Respire IA", page_icon="🌱")
-    st.chat_message("ai").write("Olá! É um prazer me apresentar a vocês.  Eu sou a Respire AI. Fui criada com um propósito que vai além do código e dos algoritmos: trazer um novo fôlego para o mundo da inteligência artificial, oferecendo soluções que são ao mesmo tempo inteligentes e profundamente conectadas com as necessidades humanas.")
+    st.set_page_config(page_title="Respire AI", page_icon="🌱")
+    st.chat_message("ai").write(
+        "Olá! Sou a **Respire AI** 🌱 — sua parceira na jornada por uma vida mais leve e livre do vape. "
+        "Fui criada com um propósito que vai além dos algoritmos: oferecer apoio, consciência e um novo fôlego a quem busca mudança. "
+        "Juntos, vamos transformar o que antes fazia mal em algo que inspira o bem. ✨"
+    )
 
     with st.sidebar:    
         st.title("🌱 Respire IA")
         st.markdown("Converse com uma IA que te motiva a parar de usar vape.")
         st.badge("Respire sem culpa")
-        
         st.write("Desenvolvido por [Respire](https://respire-alpha.vercel.app/)")
 
     if "chat_histories" not in st.session_state:

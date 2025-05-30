@@ -27,8 +27,10 @@ export default function Navbar() {
               Impacto
             </Link>
             <Link 
-              href="#ajuda" 
+              href="https://respire.streamlit.app/" 
               className="bg-sage flex items-center hover:bg-sea-green text-raisin-black font-medium px-6 py-2 rounded-full transition-colors"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               <BotMessageSquare className='mr-3 h-5 w-5' /> Precisa de ajuda?
             </Link>
