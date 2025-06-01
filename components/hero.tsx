@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import logo from "@/public/logo.png"
 import { useState, useEffect } from "react"
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
     const [showBadge, setShowBadge] = useState(false)
@@ -50,23 +51,10 @@ export default function Hero() {
               Transforme o descarte do seu vape em um ato de saúde, consciência e impacto positivo.
             </p>
 
-            <div className="relative inline-block" onMouseEnter={handleHover}>
-                <Button className="bg-sage hover:bg-sea-green text-raisin-black font-medium px-8 py-3 rounded-full text-lg transition-colors mb-4">
-                    Comece Agora
-                </Button>
-
-                <AnimatePresence>
-                    {showBadge && (
-                    <motion.div
-                        className="absolute top-[1rem] ml-4 -translate-y-1/2 bg-sea-green text-white text-sm px-3 py-1 rounded-full shadow-lg whitespace-nowrap"
-                        initial={{ opacity: 0, x: 10 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: 10 }}
-                    >
-                        Estamos em beta 🚧
-                    </motion.div>
-                    )}
-                </AnimatePresence>
+            <div className="inline-block mb-10">
+                <Link href={"https://respire.streamlit.app/"} className="bg-sage hover:bg-sea-green text-raisin-black font-medium px-8 py-3 rounded-full text-lg transition-colors mb-4">
+                  Comece agora
+                </Link>
             </div>
 
             <div className="flex flex-col items-center text-ash-gray text-sm">
