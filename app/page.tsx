@@ -37,7 +37,6 @@ export default function Home() {
             />
           </div>
 
-          {/* Texto à direita */}
           <div className="flex-1">
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-[800] text-raisin-black mb-4 md:mb-6">
               Respire AI

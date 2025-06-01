@@ -18,13 +18,13 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="text-sm mb-2">contato@respire.eco</p>
-          <div className="flex justify-center gap-4">
+            <div className="flex justify-center gap-4">
             <Link
-              href="https://instagram.com"
+              href="https://www.instagram.com/respireprojeto/"
               target="_blank"
               aria-label="Instagram"
               className="hover:text-white transition-colors"
+              rel="noopener noreferrer"
             >
               <Instagram className="w-5 h-5" />
             </Link>
