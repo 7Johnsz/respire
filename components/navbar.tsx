@@ -1,11 +1,11 @@
 'use client';
 
-import Image from 'next/image'
-import logo from '@/public/logo.png'
-import { Button } from '@/components/ui/button' 
 import { BotMessageSquare, Menu } from 'lucide-react' 
-import Link from 'next/link'
+import { Button } from '@/components/ui/button' 
+import logo from '@/public/logo.png'
 import { useState } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -48,19 +48,19 @@ export default function Navbar() {
             </Button>
           </div>
 
-          {isMobileMenuOpen && (
-            <div className="absolute top-full right-6 mt-2 w-48 bg-raisin-black rounded-md shadow-lg p-2 md:hidden">
-              <Link href="#sobre" className="block px-4 py-2 text-ash-gray hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>
-                Sobre
-              </Link>
-              <Link href="#impacto" className="block px-4 py-2 text-ash-gray hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>
-                Impacto
-              </Link>
-              <Link href="#ajuda" className="block px-4 py-2 text-ash-gray hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>
-                Precisa de ajuda?
-              </Link>
-            </div>
-          )}
+        {isMobileMenuOpen && (
+          <div className="fixed top-0 right-0 left-0 mt-16 bg-raisin-black z-[9999] rounded-b-xl shadow-2xl p-4 md:hidden">
+            <Link href="#sobre" className="block px-4 py-3 text-ash-gray hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>
+              Sobre
+            </Link>
+            <Link href="#impacto" className="block px-4 py-3 text-ash-gray hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>
+              Impacto
+            </Link>
+            <Link href="https://respire.streamlit.app/" target="_blank" rel="noopener noreferrer" className="block px-4 py-3 text-ash-gray hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>
+              Precisa de ajuda?
+            </Link>
+          </div>
+        )}
         </nav>
     )
 }
