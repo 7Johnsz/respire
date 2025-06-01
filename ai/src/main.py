@@ -20,7 +20,7 @@ def main():
     )
 
     with st.sidebar:    
-        st.title("🌱 Respire IA")
+        st.title("🌱 Respire AI")
         st.markdown("Converse com uma IA que te motiva a parar de usar vape.")
         st.badge("Respire sem culpa")
         st.write("Desenvolvido por [Respire](https://respire-alpha.vercel.app/)")
