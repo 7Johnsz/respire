@@ -37,7 +37,7 @@ export default function Hero() {
               aria-label="Nature Background"
             />
           </div>
-          <div className="relative z-10 max-w-3xl mx-auto text-center">
+          <div className="relative max-w-3xl mx-auto text-center">
             <div className="mb-5 justify-center flex">
               <Image src={logo} width={100} height={100} alt="logo"/>
             </div>
